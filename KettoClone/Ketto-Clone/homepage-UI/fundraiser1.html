@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="fundraiser1.css"> 
+</head>
+<body>
+    
+  <div id="mainBox" > 
+       <p class="title"> Tell us more about  your Fundraiser </p><hr>
+       <div id="inner1" >
+           <p>Purpose of raising funds</p>
+           <select id="purpose">
+            <option value="">Medical Treatment</option>
+            <option value="">NGO/Charity</option>
+            <option value="">Other Casue</option>
+           </select>
+       </div>
+       <br>
+       <label >How much amount do you want to Raise?</label>
+       <input  type="number" placeholder="₹ " id="amount">  
+       <p>Should be minimum ₹2000</p> 
+        <label >The Patient is my..</label>
+         <div>
+           <select id="relationship">
+                <option value="">Others</option>
+                <option value="">Mother</option>
+                <option value="">Brother</option>
+                <option value="">Sister</option>
+                <option value="">Cousin</option>
+                <option value="">Uncle</option>
+                <option value="">Ant</option>
+                <option value="">Grandfather</option>
+                <option value="">Grandmother</option>
+                <option value="">Father</option>
+           </select>
+         </div>  
+    
+        
+         <label >How Did You Hear About Us ?</label>
+         <div>
+           <select id="relationship">
+                <option value="">Youtube</option>
+                <option value="">Facebook</option>
+                <option value="">Google</option>
+                <option value="">Sister</option>
+                <option value="">Friends</option>
+           </select>
+         </div>  
+      
+      <label > Enter Campaign's Title</label>
+       <input type="text" id="campaigntitle">  
+
+       <label > Enter User's Image Address</label>
+       <input type="text" id="userImage">  
+     
+       <label > Enter Campaign's Image Address</label>
+       <input type="text" id="imageaddress">       
+
+       <div id="textdiv" >
+         <p>Ketto's zero platform fee policy will ensure more funds for you.</p>
+       </div>
+       
+       <a id="next" onclick="nextButtonHandler()" href="#" > <p>Save and continue</p>  </a>
+   </div>
+
+    
+</body>
+</html>
+
+ <script src="fundraiser1.js"></script>

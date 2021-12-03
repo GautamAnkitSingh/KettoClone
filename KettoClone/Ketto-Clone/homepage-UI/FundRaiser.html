@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fundraiser.css"> 
+ </head>
+ <body>
+     
+   <div id="mainBox" > 
+        <p class="title"> Start your fundraiser </p><hr>
+        <div id="inner1" >
+            <p>Purpose of raising funds</p>
+            <select id="purpose">
+                <option value="">Medical Treatment</option>
+                <option value="">NGO/Charity</option>
+                <option value="">Other Casue</option>
+            </select>
+        </div>
+        <br>
+        <input  type="text" placeholder="Name " id="name"> <span  class="material-icons  iconProp">person</span>
+        <input type="email"  pattern=".+@globex\.com" size="30" required id="mail" placeholder="Email Address">  <span  class="material-icons  iconProp"> mail</span>
+        <input type="password"  id="password" placeholder="Create a Password" > <span  class="material-icons  iconProp"> no_encryption </span>
+        <input type="text" id="phone" pattern="[789][0-9]{9}" placeholder="Mobile" > <span  class="material-icons  iconProp"> call </span>
+          
+        <p id="alreadyaccount" > Already have an Account?  <a href="#"> Login</a> </p>
+        <a id="next" onclick="raiseFund()" href="#" > <p>Next</p>  </a>
+    </div>
+
+     
+ </body>
+ </html>
+
+
+  <script src="fundraiser.js"></script>
